@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="my-5"></div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center fw-bolder">Calculadora de IMC</h1>
+                        </div>
+                        <div class="input-group mb-3 mt-5">
+                            <span class="input-group-text">Peso (Kg)</span>
+                            <input id="peso" type="text" value="60" class="form-control" placeholder="Digite seu peso">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Altura (m)</span>
+                            <input id="altura" type="text" value="1.6" class="form-control" placeholder="Digite sua altura">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <button onclick="calcularImc()" class="btn btn-primary w-100">Gerar resultado</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="my-5"></div>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 id="resultadoImc" class="text-center"></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="imc.js"></script>
+</body>
+</html>
